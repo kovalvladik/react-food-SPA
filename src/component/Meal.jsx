@@ -7,7 +7,6 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import {Grid} from "@material-ui/core";
 import {Link} from "react-router-dom";
 
 const useStyles = makeStyles({
@@ -20,25 +19,26 @@ const useStyles = makeStyles({
 });
 
 
-function CategoryItem (props) {
-    const {idCategory,strCategory,strCategoryThumb,strCategoryDescription} = props
+
+function Meal(props) {
+    const {idMeal,strMeal,strMealThumb} = props
     const classes = useStyles();
-    return(
+
+    return (
         <Card className={classes.root}>
             <CardActionArea>
                 <CardMedia
                     component="img"
-                    alt="Contemplative Reptile"
+
                     height="140"
-                    image={strCategoryThumb}
-                    title={idCategory}
+                    image={strMealThumb}
+                    title={strMeal}
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                        {strCategory}
+                        {strMeal}
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p"  noWrap>
-                        {strCategoryDescription}
                     </Typography>
                 </CardContent>
             </CardActionArea>
@@ -46,16 +46,11 @@ function CategoryItem (props) {
                 <Button size="small" color="primary">
                     Share
                 </Button>
-                <Button size="small" color="primary" component={Link} to={`/category/${strCategory}`}>
-                    Learn More
+                <Button size="small" color="primary" component={Link} to={`/meal/${idMeal}`}>
+                    Watch Recipe
                 </Button>
             </CardActions>
         </Card>
     );
 }
-export {CategoryItem}
-
-
-
-
-
+export {Meal}

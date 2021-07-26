@@ -5,6 +5,7 @@ import {Home} from "./component/pages/Home";
 import {Contact} from "./component/pages/Contact";
 import {About} from "./component/pages/About";
 import {NotFound} from "./component/pages/NotFound";
+import {Category} from "./component/pages/Category";
 
 function App() {
   return (<>
@@ -14,6 +15,7 @@ function App() {
             <Switch>
               <Route exact path='/' component={Home}/>
               <Route path='/about' component={About}/>
+              <Route path='/category/:name' component={Category}/>
               <Route path='/contact' component={Contact}/>
               <Route  component={NotFound}/>
             </Switch>
