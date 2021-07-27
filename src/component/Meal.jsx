@@ -35,11 +35,10 @@ function Meal(props) {
                     title={strMeal}
                 />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
+                    <Typography gutterBottom variant="h7" component="h3" noWrap >
                         {strMeal}
                     </Typography>
-                    <Typography variant="body2" color="textSecondary" component="p"  noWrap>
-                    </Typography>
+
                 </CardContent>
             </CardActionArea>
             <CardActions>

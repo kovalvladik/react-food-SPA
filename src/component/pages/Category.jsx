@@ -3,6 +3,7 @@ import {useEffect,useState} from 'react'
 import Preloader from "../Preloader";
 import {MealList} from "../MealList";
 import {getFilteredByCategory} from "../../api";
+import ButtonNavigation from "../ButtonNavigation";
 
 function Category (){
     const {name} = useParams()
@@ -13,6 +14,7 @@ function Category (){
     },[name])
 
     return<>
+        <ButtonNavigation/>
         {!meals.length ? <Preloader/> : <MealList meals={meals}/> }
     </>
 }

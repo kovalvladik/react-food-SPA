@@ -6,10 +6,13 @@ import {Contact} from "./component/pages/Contact";
 import {About} from "./component/pages/About";
 import {NotFound} from "./component/pages/NotFound";
 import {Category} from "./component/pages/Category";
+import ButtonNavigation from "./component/ButtonNavigation";
 
 function App() {
   return (<>
-    <Router><Header/>
+    <Router>
+        <Header/>
+
         <main>
 
             <Switch>

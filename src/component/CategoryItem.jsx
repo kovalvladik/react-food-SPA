@@ -7,8 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import {Grid} from "@material-ui/core";
-import {Link} from "react-router-dom";
+import {Link,useHistory} from "react-router-dom";
 
 const useStyles = makeStyles({
     root: {
@@ -22,7 +21,10 @@ const useStyles = makeStyles({
 
 function CategoryItem (props) {
     const {idCategory,strCategory,strCategoryThumb,strCategoryDescription} = props
+
     const classes = useStyles();
+
+
     return(
         <Card className={classes.root}>
             <CardActionArea>
@@ -43,9 +45,6 @@ function CategoryItem (props) {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="primary">
-                    Share
-                </Button>
                 <Button size="small" color="primary" component={Link} to={`/category/${strCategory}`}>
                     Learn More
                 </Button>
