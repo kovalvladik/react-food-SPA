@@ -3,6 +3,8 @@ import {getMealById} from '../../api'
 import {useEffect,useState} from "react";
 import ButtonNavigation from "../ButtonNavigation";
 import Preloader from "../Preloader";
+import {RecipeTable} from "../RecipeTable";
+import {VedeoRecipe} from "../VedeoRecipe";
 
 function Recipe() {
 
@@ -23,13 +25,15 @@ function Recipe() {
                 <h1>{ recipe.strMeal}</h1>
                 <h6> { recipe.strCategory}</h6>
                 {recipe.strArea ? <h6>{recipe.strArea}</h6> : null}
-                <div>
-                    <iframe
-                    title={id}
-                    src={`https://www.youtube.com/embed/${recipe.strYoutube.slice(-11)}`}
-                    allowFullScreen
-                    />
-                </div>
+                <RecipeTable/>
+                <VedeoRecipe recipe={recipe}/>
+                {/*<div>*/}
+                {/*    <iframe*/}
+                {/*    title={id}*/}
+                {/*    src={`https://www.youtube.com/embed/${recipe.strYoutube.slice(-11)}`}*/}
+                {/*    allowFullScreen*/}
+                {/*    />*/}
+                {/*</div>*/}
 
             </div>
         )}
