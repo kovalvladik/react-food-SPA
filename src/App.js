@@ -6,7 +6,7 @@ import {Contact} from "./component/pages/Contact";
 import {About} from "./component/pages/About";
 import {NotFound} from "./component/pages/NotFound";
 import {Category} from "./component/pages/Category";
-import ButtonNavigation from "./component/ButtonNavigation";
+import {Recipe} from "./component/pages/Recipe";
 
 function App() {
   return (<>
@@ -19,6 +19,7 @@ function App() {
               <Route exact path='/' component={Home}/>
               <Route path='/about' component={About}/>
               <Route path='/category/:name' component={Category}/>
+              <Route path='/meal/:id' component={Recipe}/>
               <Route path='/contact' component={Contact}/>
               <Route  component={NotFound}/>
             </Switch>
