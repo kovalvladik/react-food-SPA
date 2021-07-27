@@ -44,7 +44,6 @@ export default function Header() {
                     </Typography>
                         <Button component={Link} to = '/contact' color="inherit">Contacts</Button>
                         <Button  component={Link} to = '/about' color="inherit" >About</Button>
-                        <Button color="inherit">Login</Button>
                 </Toolbar>
             </AppBar>
         </div>

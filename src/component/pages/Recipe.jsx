@@ -27,13 +27,6 @@ function Recipe() {
                 {recipe.strArea ? <h6>{recipe.strArea}</h6> : null}
                 <RecipeTable/>
                 <VedeoRecipe recipe={recipe}/>
-                {/*<div>*/}
-                {/*    <iframe*/}
-                {/*    title={id}*/}
-                {/*    src={`https://www.youtube.com/embed/${recipe.strYoutube.slice(-11)}`}*/}
-                {/*    allowFullScreen*/}
-                {/*    />*/}
-                {/*</div>*/}
 
             </div>
         )}
