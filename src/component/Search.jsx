@@ -8,6 +8,8 @@ import Button from "@material-ui/core/Button";
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
+
+
     },
     menuButton: {
         marginRight: theme.spacing(2),
@@ -22,15 +24,16 @@ const useStyles = makeStyles((theme) => ({
     search: {
         position: 'relative',
         borderRadius: theme.shape.borderRadius,
-        backgroundColor: alpha(theme.palette.common.white, 0.15),
+        backgroundColor: '#afc2cb',
         '&:hover': {
             backgroundColor: alpha(theme.palette.common.white, 0.25),
         },
         marginLeft: 0,
-        width: '100%',
+        border:'2px',
+        width: '30%',
         [theme.breakpoints.up('sm')]: {
             marginLeft: theme.spacing(1),
-            width: 'auto',
+            width: '23%',
         },
     },
     searchIcon: {
@@ -50,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
         // vertical padding + font size from searchIcon
         paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
         transition: theme.transitions.create('width'),
-        width: '100%',
+        width: '30%',
         [theme.breakpoints.up('sm')]: {
             width: '12ch',
             '&:focus': {
@@ -93,7 +96,7 @@ function Search (props) {
             onChange={(e)=>setValue(e.target.value)}
             value={value}
         />
-        <Button onClick={}>
+        <Button onClick={handleSubmit}>
             Search
         </Button>
     </div>
