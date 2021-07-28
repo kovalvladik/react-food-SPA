@@ -44,6 +44,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
+        color:'white'
     },
     inputRoot: {
         color: 'inherit',
@@ -61,6 +62,9 @@ const useStyles = makeStyles((theme) => ({
             },
         },
     },
+    button:{
+        color:'white',
+    }
 }));
 
 function Search (props) {
@@ -96,7 +100,7 @@ function Search (props) {
             onChange={(e)=>setValue(e.target.value)}
             value={value}
         />
-        <Button onClick={handleSubmit}>
+        <Button onClick={handleSubmit}  className={classes.button}>
             Search
         </Button>
     </div>
