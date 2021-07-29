@@ -6,7 +6,7 @@ import ButtonNavigation from "./ButtonNavigation";
 const useStyles = makeStyles({
     root: {
         flexGrow: 1,
-        marginTop:'20px',
+        padding:'3rem'
         // marginLeft:'3px'
     },
 

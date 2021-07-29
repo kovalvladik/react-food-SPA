@@ -11,11 +11,14 @@ import {Link,useHistory} from "react-router-dom";
 
 const useStyles = makeStyles({
     root: {
-        maxWidth: 345,
+        maxWidth: 300,
     },
     grid:{
         flexGrow: 1,
-    }
+    },
+    typography:{
+        paddingTop:'1rem'
+    },
 });
 
 
@@ -36,10 +39,15 @@ function CategoryItem (props) {
                     title={idCategory}
                 />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
+                    <Typography gutterBottom variant="h5" component="h2" >
                         {strCategory}
                     </Typography>
-                    <Typography variant="body2" color="textSecondary" component="p"  noWrap>
+                    <Typography variant="body2"
+                                color="textSecondary"
+                                component="p"
+                                noWrap
+                                className={classes.typography}
+                    >
                         {strCategoryDescription}
                     </Typography>
                 </CardContent>

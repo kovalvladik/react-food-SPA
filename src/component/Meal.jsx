@@ -12,7 +12,7 @@ import {Link} from "react-router-dom";
 
 const useStyles = makeStyles({
     root: {
-        maxWidth: 345,
+        maxWidth: 300,
     },
     grid:{
         flexGrow: 1,

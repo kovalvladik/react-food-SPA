@@ -5,8 +5,8 @@ import {useHistory} from "react-router-dom";
 
 const useStyles = makeStyles({
     root: {
-        marginTop:'20px',
-        marginLeft:'3px'
+        marginLeft:'3px',
+        padding:'4rem',
     },
 
 });

@@ -11,6 +11,10 @@ const useStyles = makeStyles({
     root: {
         backgroundColor:'#afc2cb',
     },
+    main:{
+        minHeight: 'calc(100vh - 70px - 64px)',
+
+    },
 
 });
 
@@ -47,14 +51,14 @@ function Home () {
             )
         })
     },[search])
-    return <>
+    return <div className={classes.main}>
         <div className={classes.root}>
             <Search cb={handleSearch} />
         </div>
 
         {!catalog.length ? <Preloader/> : (
-            < CategoryList catalog={filteredCatalog}/>
+            < CategoryList catalog={filteredCatalog} />
         )}
-    </>
+    </div>
 }
 export {Home}
