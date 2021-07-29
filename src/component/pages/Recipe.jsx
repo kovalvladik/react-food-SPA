@@ -7,12 +7,9 @@ import Typography from '@material-ui/core/Typography';
 import {RecipeTable} from "../RecipeTable";
 import {VideoRecipe} from "../VideoRecipe";
 import {makeStyles} from "@material-ui/core/styles";
-import ImageList from '@material-ui/core/ImageList';
-import ImageListItem from '@material-ui/core/ImageListItem';
-import {Card, Container, Grid, List, Paper} from "@material-ui/core";
+import { Card, Container, Grid, Paper} from "@material-ui/core";
 import CardHeader from '@material-ui/core/CardHeader';
-import CardMedia from "@material-ui/core/CardMedia";
-import {green} from "@material-ui/core/colors";
+import CardContent from "@material-ui/core/CardContent";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -43,6 +40,10 @@ const useStyles = makeStyles((theme) => ({
         },
         [theme.breakpoints.up('lg')]: {
         },
+
+    },
+    typography:{
+        paddingTop:'1rem',
 
     },
 
@@ -89,38 +90,22 @@ function Recipe() {
                                             </Paper>
                                         </Grid>
                                     </Grid>
+                                </Grid>
 
+
+                                <CardContent>
+                                    <Typography gutterBottom variant='h6' className={classes.typography}>
+                                        {recipe.strInstructions}
+                                    </Typography>
+
+                                </CardContent>
+
+
+                                            <RecipeTable/>
 
 
                                 </Grid>
 
-
-                            {/*<Grid container*/}
-                            {/*      direction="row"*/}
-                            {/*      >*/}
-                            {/*    <Grid item style={{height:'60%', width:'60%'}}>*/}
-                            {/*        <CardMedia*/}
-                            {/*                   component="img"*/}
-                            {/*                   src={recipe.strMealThumb}*/}
-                            {/*                   className={classes.image} ></CardMedia>*/}
-                            {/*    </Grid>*/}
-                            {/*    <Grid item className={classes.video} style={{height:'60%', width:'40%'}}>*/}
-                            {/*        <VideoRecipe recipe={recipe} />*/}
-                            {/*    </Grid>*/}
-                            {/*</Grid>*/}
-
-
-
-                            {/*<Typography component='h5'>*/}
-                            {/*    { recipe.strCategory}*/}
-                            {/*</Typography>*/}
-                            {/*{recipe.strArea ? <Typography component='h6'>{recipe.strArea}</Typography> : null}*/}
-
-                                {/*<img src={recipe.strMealThumb} className={classes.image} />*/}
-
-                            <RecipeTable/>
-                            {/*<VideoRecipe recipe={recipe}/>*/}
-                                </Grid>
                         </Card>
 
         </Container>

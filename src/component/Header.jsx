@@ -20,6 +20,7 @@ const useStyles = makeStyles(({
     },
     title: {
         flexGrow: 1,
+        position:'center',
     },
     buttonHome:{
         // backgroundColor:'whitesmoke',

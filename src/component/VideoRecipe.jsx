@@ -1,7 +1,6 @@
 import { useParams} from "react-router-dom";
 import CardMedia from '@material-ui/core/CardMedia'
 import {makeStyles} from "@material-ui/core/styles";
-import {green} from "@material-ui/core/colors";
 
 const useStyles = makeStyles((theme) => ({
 
