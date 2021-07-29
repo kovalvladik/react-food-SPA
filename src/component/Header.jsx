@@ -8,7 +8,6 @@ import Button from '@material-ui/core/Button';
 import {Link} from "react-router-dom";
 import HomeIcon from '@material-ui/icons/Home';
 import { IconButton} from "@material-ui/core";
-import {Search} from "./Search";
 
 
 
@@ -25,7 +24,8 @@ const useStyles = makeStyles(({
     },
     buttonHome:{
         // backgroundColor:'whitesmoke',
-    }
+    },
+
 
 }));
 
@@ -40,8 +40,6 @@ export default function Header() {
                     <IconButton color='inherit'  component={Link} to = '/' >
                         <HomeIcon  />
                     </IconButton>
-                    <Search/>
-
                     <Typography align='center' variant="h6" className={classes.title}  >
                         React Food SPA
                     </Typography>
