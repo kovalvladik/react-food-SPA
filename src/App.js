@@ -7,7 +7,6 @@ import {About} from "./component/pages/About";
 import {NotFound} from "./component/pages/NotFound";
 import {Category} from "./component/pages/Category";
 import {Recipe} from "./component/pages/Recipe";
-import {ContextProvider} from './context'
 
 function App() {
   return (<>
