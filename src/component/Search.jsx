@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
         display: 'none',
         [theme.breakpoints.up('sm')]: {
-            display: 'block',
+            display: 'none',
         },
     },
     search: {
@@ -27,13 +27,15 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: '#afc2cb',
         '&:hover': {
             backgroundColor: alpha(theme.palette.common.white, 0.25),
+
+
         },
         marginLeft: 0,
         border:'2px',
         width: '30%',
-        [theme.breakpoints.up('sm')]: {
-            marginLeft: theme.spacing(1),
-            width: '23%',
+        [theme.breakpoints.down('sm')]: {
+
+            width: '100%',
         },
     },
     searchIcon: {
@@ -56,9 +58,9 @@ const useStyles = makeStyles((theme) => ({
         transition: theme.transitions.create('width'),
         width: '30%',
         [theme.breakpoints.up('sm')]: {
-            width: '12ch',
+            width: '100%',
             '&:focus': {
-                width: '20ch',
+                width: '100%',
             },
         },
     },
