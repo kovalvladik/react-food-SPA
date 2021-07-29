@@ -1,5 +1,6 @@
 {
   "name": "food-project",
+  "homepage": "https://kovalvladik.github.io/react-food-SPA/ ",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

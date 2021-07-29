@@ -1,4 +1,9 @@
+import Typography from '@material-ui/core/Typography';
+
 function About() {
-    return <h1>Hello from About</h1>
+    return <Typography  gutterBottom variant='h5'>
+        This website was made with React, Material UI and simple free API, for personal portfolio Kovalevskiy Vladislavs.
+        If you want to connect with me, you can use Telegram.
+    </Typography>
 }
 export {About}

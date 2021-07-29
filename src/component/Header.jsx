@@ -43,7 +43,6 @@ export default function Header() {
                     <Typography align='center' variant="h6" className={classes.title}  >
                         React Food SPA
                     </Typography>
-                        <Button component={Link} to = '/contact' color="inherit">Contacts</Button>
                         <Button  component={Link} to = '/about' color="inherit" >About</Button>
                 </Toolbar>
             </AppBar>
