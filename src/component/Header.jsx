@@ -8,7 +8,6 @@ import Button from '@material-ui/core/Button';
 import {Link} from "react-router-dom";
 import HomeIcon from '@material-ui/icons/Home';
 import { IconButton} from "@material-ui/core";
-import {Search} from "./Search";
 
 
 
