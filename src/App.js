@@ -10,7 +10,7 @@ import {Recipe} from "./component/pages/Recipe";
 
 function App() {
   return (<>
-    <Router>
+    <Router basename='/react-food-SPA'>
             <Header/>
             <main>
                 <Switch>
