@@ -1,7 +1,7 @@
 import {useParams} from 'react-router-dom'
 import {useEffect,useState} from 'react'
 import Preloader from "../Preloader";
-import {MealList} from "../MealList";
+import {MealList} from "../meal/MealList";
 import {getFilteredByCategory} from "../../api";
 import ButtonNavigation from "../ButtonNavigation";
 

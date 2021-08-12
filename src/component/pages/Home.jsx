@@ -1,10 +1,12 @@
 import {useState,useEffect} from 'react'
 import {getAllCategories} from "../../api";
-import {CategoryList} from "../CategoryList";
+import {CategoryList} from "../category/CategoryList";
 import Preloader from "../Preloader";
 import {Search} from "../Search";
 import {useLocation, useHistory} from 'react-router-dom'
 import {makeStyles} from "@material-ui/core/styles";
+import {useDispatch, useSelector} from "react-redux";
+import {fetchCatalog} from "../../redux/reducers";
 
 
 const useStyles = makeStyles({
@@ -23,12 +25,16 @@ function Home () {
 
     const classes = useStyles();
 
+    const  dispatch  = useDispatch()
+    const data = useSelector(state => state.catalog)
+console.log(data)
 
     const {push} = useHistory()
 
     const {pathname,search} = useLocation()
 
     const [catalog,setCatalog] = useState([])
+
 
     const [filteredCatalog, setFilteredCatalog] = useState([])
 

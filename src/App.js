@@ -7,9 +7,12 @@ import {About} from "./component/pages/About";
 import {NotFound} from "./component/pages/NotFound";
 import {Category} from "./component/pages/Category";
 import {Recipe} from "./component/pages/Recipe";
+import {Provider} from "react-redux";
+import {store} from "./redux/contex";
 
 function App() {
   return (<>
+          <Provider store={store}>
     <Router basename='/react-food-SPA'>
             <Header/>
             <main>
@@ -24,6 +27,7 @@ function App() {
             </main>
     <Footer/>
 </Router>
+  </Provider>
   </>
 
   );

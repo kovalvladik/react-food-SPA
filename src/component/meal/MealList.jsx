@@ -1,7 +1,7 @@
 import {Meal} from "./Meal";
 import {Grid} from "@material-ui/core";
 import {makeStyles} from "@material-ui/core/styles";
-import ButtonNavigation from "./ButtonNavigation";
+import ButtonNavigation from "../ButtonNavigation";
 
 const useStyles = makeStyles({
     root: {

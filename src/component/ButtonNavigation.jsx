@@ -37,7 +37,6 @@ export default function ButtonNavigation() {
     const classes = useStyles();
     const {goBack} = useHistory()
 
-    // const [value, setValue] = useState('recents');
 
 
 
